@@ -1,3 +1,6 @@
+spring:
+  application:
+    name: RATINGS
 eureka:
   client:
     serviceUrl:
