@@ -1,0 +1,11 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka/  # Ensure Eureka URL is correct
+    register-with-eureka: true  # Register this service with Eureka
+    fetch-registry: true  # Fetch the service registry
+    registry-fetch-interval-seconds: 5  # Fetch updates every 5 seconds
+  instance:
+    lease-renewal-interval-in-seconds: 5  # Send heartbeat every 5 seconds
+    lease-expiration-duration-in-seconds: 10  # Expire instance if no heartbeat in 10s
+    hostname: localhost
